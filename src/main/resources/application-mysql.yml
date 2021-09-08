@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/spring_batch?characterEncoding=UTF-8&serverTimezone=UTC&rewriteBatchedStatements=true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: dkfrndepd78!
+  jpa:
+    hibernate:
+      ddl-auto: update # table 없는 경우 생성, 엔티티가 변경된 경우 스키마 업뎃
+    show-sql: true
+batch:
+  initialize-schema: never # 메타테이블이 자동으로 생성되지 않도록 설정
